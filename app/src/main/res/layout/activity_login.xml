@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/usernametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+
+        android:layout_centerVertical="false"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#DFCDCD"
+        android:text="Your Username "
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#DDA5A5"
+        android:textSize="35dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/usernameerror"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#DFCDCD"
+        android:text="Please insert your name"
+        android:visibility="invisible"
+        android:layout_below="@id/username"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#D60C0C"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernametext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:width="300dp"
+        android:hint="username"
+        android:inputType="textPersonName"
+        android:text=""
+        android:textColor="#DDC4C4"
+        android:textSize="20dp" />
+
+
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usernameerror"
+        android:layout_marginTop="30dp"
+        android:text="START"
+        android:textSize="30dp"
+        
+        android:layout_centerHorizontal="true"
+        android:width="150dp"
+        android:onClick="start" />
+
+</RelativeLayout>

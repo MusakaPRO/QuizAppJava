@@ -1,4 +1,4 @@
-package com.example.josethomas.quizapp;
+package com.example.ispit.quizapp;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     int score = 0;
     int quid = 0;
     Question currentQuestion;
+    String username;
 
     TextView txtQuestion;
     RadioButton rda,rdb,rdc;
@@ -70,7 +71,14 @@ public class MainActivity extends AppCompatActivity {
             currentQuestion = questionList.get(quid);
             setQuestionView();
         }else{
+
+
             Intent intent = new Intent(MainActivity.this, ResultActivity.class);
+            username = getIntent().getStringExtra("username");
+            Log.d("username", "username is..(MAIN)  "+username);
+
+            intent.putExtra("username", String.valueOf(username));
+            Log.d("username", "username is..(MAINintent)  "+username);
             Bundle b = new Bundle();
             b.putInt("score",score);
             intent.putExtras(b);

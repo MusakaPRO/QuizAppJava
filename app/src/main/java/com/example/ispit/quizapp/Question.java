@@ -1,4 +1,4 @@
-package com.example.josethomas.quizapp;
+package com.example.ispit.quizapp;
 
 
 public class Question {

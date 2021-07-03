@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.josethomas.quizapp.MainActivity"
+    tools:context="com.example.ispit.quizapp.MainActivity"
     tools:showIn="@layout/activity_main">
 
     <TextView
@@ -17,6 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Large Text"
+        android:textColor="#fff"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <RadioGroup
@@ -30,19 +31,28 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:checked="true"
+            android:padding="15dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
             android:text="Radio Button"/>
 
         <RadioButton
             android:id="@+id/radio1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Radio Button"/>
+            android:text="Radio Button"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:padding="15dp"/>
 
         <RadioButton
             android:id="@+id/radio2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Radio Button"/>
+            android:text="Radio Button"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:padding="15dp"/>
 
     </RadioGroup>
     <Button

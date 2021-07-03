@@ -7,7 +7,8 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.josethomas.quizapp.ResultActivity">
+    android:background="@drawable/bg2"
+    tools:context="com.example.ispit.quizapp.ResultActivity">
 
     <ImageView
         android:id="@+id/img1"
@@ -27,6 +28,20 @@
         android:textSize="30sp" />
 
     <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="username"
+        android:textSize="30dp"
+        android:textStyle="bold|italic"
+
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/img1"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+    <TextView
         android:id="@+id/score"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -35,16 +50,27 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:textSize="35sp"
-        android:textColor="#F00"
+        android:textColor="#500E38"
         android:textAppearance="?android:attr/textAppearanceLarge"/>
 
     <RatingBar
         android:id="@+id/ratingBar1"
+        style="@style/Widget.AppCompat.RatingBar.Indicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:numStars="5"
-        android:stepSize="1"
         android:layout_below="@+id/score"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:numStars="10"
+        android:stepSize="1" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="373dp"
+        android:layout_height="68dp"
+        android:layout_below="@+id/ratingBar1"
+        android:layout_marginTop="30dp"
+        android:onClick="highscore"
+        android:text="HIGHSCORES" />
 
 </RelativeLayout>
